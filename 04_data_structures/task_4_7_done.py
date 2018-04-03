@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3.6
 # -*- coding: utf-8 -*-
 '''
 Задание 4.7
@@ -9,3 +10,12 @@
 '''
 
 MAC = 'AAAA:BBBB:CCCC'
+
+
+MAC = MAC.replace(':', '')
+BIN = bin( int(MAC, 16) )
+print( "{:b}".format( int(MAC,16) ) )
+
+HEX = hex( int(BIN, 2) )
+print(HEX)
+

@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3.6
 # -*- coding: utf-8 -*-
 '''
 Задание 4.1
@@ -10,3 +11,9 @@
 '''
 
 NAT = 'ip nat inside source list ACL interface FastEthernet0/1 overload'
+
+NAT = NAT.replace('Fast','Gigabit')
+
+print(NAT)
+
+
